@@ -364,5 +364,95 @@
   }
 }
 
+.footer{
+  margin-top: 80px;
+  &-top{
+    display: flex;
+    justify-content: space-between;
+  }
+  &-item{
+    text-align: left;
+    width: 255px;
+    margin-bottom: 60px;
+  }
+  &-item+.footer-item{
+    margin-left: 30px;
+  }
+  &-item__title{
+    font-size: 18px;
+    color: #333;
+    @extend %roboto-500;
+    padding-bottom: 10px;
+    text-transform: uppercase;
+    border-bottom: 1px solid #333;
+    margin-bottom: 40px;
+  }
+  &-item__link{
+    @extend %footer-text;
+    margin-bottom: 15px;
+    display: block;
+  }
+  &-item__text{
+    @extend %footer-text;
+    margin-bottom: 20px;
+  }
+  &-item__pay{
+    float: left;
+    margin-right: 30px;
+  }
+  &-item__tel{
+    @extend %footer-text;
+    margin-bottom: 15px;
+    display: block;
+    margin-left: 20px;
+    position: relative;
+    &::before {
+      content: '';
+      position: absolute;
+      background-image: url('../images/icons/tel.svg');
+      width: 20px;
+      height: 17px;
+      top: 3px;
+      left: -25px;
+    }
+  }
+  &-item__mail{
+    @extend %footer-text;
+    margin-left: 20px;
+    position: relative;
+    &::before{
+      content: '';
+      position: absolute;
+      background-image: url('../images/icons/mail.svg');
+      width: 18px;
+      height: 14px;
+      top: 3px;
+      left: -25px;
+    }
+  }
+  &-item__social-link{
+    transition: all .3s;
+    &:hover{
+      path{
+      fill: rgb(224, 31, 31)
+      }
+    }
+  }
+  &-item__social-link+.footer-item__social-link{
+    margin-left: 22px;
+  }
+  &-bottom{
+    padding: 20px 0;
+    border-top: 1px solid #333;
+    display: flex;
+    justify-content: space-between;
+  }
+  &-botton__data{
+    @extend %footer-text;
+  }
+  &-bottom__contract{
+    @extend %footer-text;
+  }
+}
 
 @import 'media';

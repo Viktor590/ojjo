@@ -12,3 +12,10 @@
   font-family: 'NotoSerif-Bold', serif;
   font-weight: 700;
 }
+
+%footer-text{
+  font-size: 14px;
+  line-height: 21px;
+  color: #333;
+  @extend %roboto-400;
+}
