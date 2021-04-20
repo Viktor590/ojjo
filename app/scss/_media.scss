@@ -1,0 +1,118 @@
+@media(max-width: 1150px){
+  .header-partners{
+    display: none;
+  }
+  .catalog-top__filter{
+    margin-bottom: 30px;
+  }
+  .catalog-top__filter-btn{
+    width: 130px;
+    font-size: 14px;
+    height: 45px;
+    &:focus{
+      height: 45px;
+    }
+  }
+  .blog-inner{
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+@media(max-width: 950px){
+  .header-top__link{
+    font-size: 12px;
+  }
+}
+
+@media(max-width: 850px){
+  .header-top{
+    flex-wrap: wrap;
+    flex-direction: column;
+    transition: all .2s;
+    transform: translateY(-200%);
+    padding-bottom: 300px;
+    &--active{
+     transform: translateY(0);
+    }
+    &__link{
+      margin-bottom: 30px;
+      font-size: 16px;
+    }
+    &__link-crystal{
+      display: block;
+      padding: 25px 0 0 25px;
+    }
+    &__logo {
+      display: none;
+    }
+    &__link-img{
+      display: none;
+    }
+  } 
+  .header-burger{
+    display: block;
+    float: right;
+    margin-top: -60px;
+    margin-right: 25px;
+  }
+  .catalog-top__filter{
+    flex-wrap: wrap;
+    align-items: center;
+    flex-direction: column;
+  }
+  .catalog-top__filter-btn{
+    margin-bottom: 15px;
+  }
+  .adres{
+    margin-bottom: 40px;
+  }
+  .adres-item__text{
+    margin-bottom: 50px;
+  }
+  .adres-item {
+    padding: 55px 0;
+  }
+  .adres-item {
+    margin-bottom: 40px;
+  }
+  .adres-item__title {
+    margin-bottom: 30px;
+  }
+}
+
+@media(max-width: 760px){
+  .catalog-top__content{
+    grid-template-columns: repeat(2, 1fr);
+    margin-bottom: 40px;
+  }
+  .catalog-top__descr {
+    margin-top: 40px;
+  }
+}
+
+@media(max-width: 500px){
+  .header-top__link-logo{
+    max-width: 40%;
+  }
+  .catalog-top__content {
+    grid-template-columns: repeat(1, 1fr);
+    margin: 0 auto;
+  }
+  .catalog-top__img{
+    width: 100%;
+  }
+  .adres-item__text{
+    font-size: 15px;
+  }
+  .adres-item__title,
+  .blog-descr__title {
+    font-size: 20px;
+  }
+  .adres-item__subtitle,
+  .blog-descr__subtitle {
+    font-size: 16px;
+  }
+}
+

@@ -1,6 +1,10 @@
 $ (function () {
 
 
+   $('.header-burger').on('click', function () {
+   $('.header-top').toggleClass('header-top--active');
+ });
+
   $('.header-partners__slider').slick({
   dots: false,
   nextArrow: false,
@@ -10,6 +14,14 @@ $ (function () {
   autoplay: true,
   slidesToShow: 6,
   slidesToScroll: 1,
+  responsive: [
+    {
+      breakpoint: 1150,
+      settings: {
+        slidesToShow: 4,
+      }
+    },
+  ]
  });
 
  const mixerCatalog = mixitup('.catalog-top__content', {
