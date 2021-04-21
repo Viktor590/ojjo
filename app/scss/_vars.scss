@@ -19,3 +19,10 @@
   color: #333;
   @extend %roboto-400;
 }
+
+@media(max-width: 950px){
+  %footer-text{
+    font-size: 12px;
+    line-height: 17px;
+  }
+}

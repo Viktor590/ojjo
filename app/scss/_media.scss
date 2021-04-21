@@ -24,6 +24,20 @@
   .header-top__link{
     font-size: 12px;
   }
+  .footer-item{
+    width: 150px;
+  }
+  .footer-item__title {
+    font-size: 13px;
+    margin-bottom: 20px;
+  }
+  .footer-item__social-link{
+    display: block;
+    margin-bottom: 15px;
+  }
+  .footer-item__social-link+.footer-item__social-link{
+    margin-left: 0;
+  }
 }
 
 @media(max-width: 850px){
@@ -80,6 +94,22 @@
   .adres-item__title {
     margin-bottom: 30px;
   }
+  .mail-subtitle{
+    font-size: 16px;
+    padding-top: 50px;
+  }
+  .mail-title{
+    margin-bottom: 30px;
+    font-size: 25px;
+  }
+  .mail-inner {
+    display: inline-block;
+    padding-bottom: 50px;
+  }
+  .mail-submit__btn {
+    margin-right: 0;
+  }
+
 }
 
 @media(max-width: 760px){
@@ -90,7 +120,14 @@
   .catalog-top__descr {
     margin-top: 40px;
   }
+  .footer-top{
+    display: block;
+  }
+  .footer-item+.footer-item{
+    margin-left: 0;
+  }
 }
+
 
 @media(max-width: 500px){
   .header-top__link-logo{
@@ -113,6 +150,29 @@
   .adres-item__subtitle,
   .blog-descr__subtitle {
     font-size: 16px;
+  }
+  .mail-submit{
+    width: 300px;
+    padding: 0;
+  }
+  .mail-submit__inner{
+    max-width: 270px;
+    display: block;
+  }
+  .mail-submit__input{
+    width: 270px;
+    margin: 0 auto;
+    height: 40px;
+  }
+  .mail-submit__btn{
+    padding: 10px 89px;
+    margin-right: 0;
+  }
+  .footer-bottom{
+    display: block;
+    &__contract{
+      margin-right: 20px;
+    }
   }
 }
 
